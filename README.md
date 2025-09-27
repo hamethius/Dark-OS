@@ -49,8 +49,9 @@ A customizable and **privacy-friendly dark mode extension** with advanced filter
 * Enable **website-specific settings** to customize dark mode for individual sites.
 * Use the **scheduler** to automate theme changes based on time.
 
-## Contributing
+## Contributions
 
+Credits: code-charity for providing the base program
 Contributions, suggestions, and bug reports are welcome!
 
 1. Fork the repository.
