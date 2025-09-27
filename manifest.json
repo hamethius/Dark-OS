@@ -1,0 +1,32 @@
+{
+   "action": {
+      "default_popup": "options-page/index.html"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "content-scripts/styles.css" ],
+      "js": [ "assets/satus/satus.js", "content-scripts/core.js", "content-scripts/custom-css.js", "content-scripts/dynamic-theme.js", "content-scripts/filters.js" ],
+      "match_about_blank": true,
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "Open Source Dark Mode Extension",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "assets/icons/128.png",
+      "16": "assets/icons/16.png",
+      "32": "assets/icons/32.png",
+      "48": "assets/icons/48.png"
+   },
+   "manifest_version": 3,
+   "name": "Dark OS",
+   "offline_enabled": true,
+   "optional_permissions": [ "downloads" ],
+   "options_page": "options-page/index.html",
+   "permissions": [ "scripting", "storage", "tabs" ],
+   "version": "1.0.0"
+}
